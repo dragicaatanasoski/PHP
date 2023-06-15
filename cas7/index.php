@@ -111,21 +111,9 @@ $temperatures = array(78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73
 
 asort($temperatures); 
 
-$lowestTemperatures = array(60, 62, 63, 63, 64,);
-$highestTemperatures = array(76, 78, 79, 81, 85);
+$niskiTemperaturi = array(60, 62, 63, 63, 64,);
+$visokiTemperaturi = array(76, 78, 79, 81, 85);
 
-$i = 0;
-for ($i = 0; $i < count($temperatures); $i++) {
-    if ($i < 5) {
-        $lowestTemperatures[] = $temperatures[$i];
-    }
-    if ($i >= count($temperatures) - 5) {
-        $highestTemperatures[] = $temperatures[$i];
-    }
-}
-
-echo "Najniski 5 izmereni temperaturi: " . implode(", ", $lowestTemperatures) . "<br>";
-echo "Najvisoki 5 izmereni temperaturi: " . implode(", ", $highestTemperatures);
 
 
 
